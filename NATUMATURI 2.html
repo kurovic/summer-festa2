@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+ <title>natumaturi</title>
+ <meta name="description" content="南薬院夏祭りのwebサイトです">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+ <link rel="stylesheet" href="NATUMATURI 2.css">
+ <link rel="stylesheet" type="text/css" href="slick.css" media="screen" />
+ <link rel="stylesheet" type="text/css" href="slick-theme.css" media="screen" />
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="slick.min.js"></script>
+
+ <script>
+ $(function() {
+     $('.slider').slick({
+           infinite: true,
+           dots:true,
+           slidesToShow: 1,
+           centerMode: true, //要素を中央寄せ
+           centerPadding:'100px', //両サイドの見えている部分のサイズ
+           autoplay:true, //自動再生
+           responsive: [{
+                breakpoint: 480,
+                     settings: {
+                          centerMode: false,
+                }
+           }]
+      });
+ });
+ </script>
+
+  <script>
+ $(function(){
+     var effect_pos = 420; // 画面下からどの位置でフェードさせるか(px)
+     var effect_move = 50; // どのぐらい要素を動かすか(px)
+     var effect_time = 1200; // エフェクトの時間(ms) 1秒なら1000
+
+     // フェードする前のcssを定義
+     $('.scroll-fade').css({
+         opacity: 0,
+         transform: 'translateY('+ effect_move +'px)',
+         transition: effect_time + 'ms'
+     });
+
+     // スクロールまたはロードするたびに実行
+     $(window).on('scroll load', function(){
+         var scroll_top = $(this).scrollTop();
+         var scroll_btm = scroll_top + $(this).height();
+         effect_pos = scroll_btm - effect_pos;
+
+         // effect_posがthis_posを超えたとき、エフェクトが発動
+         $('.scroll-fade').each( function() {
+             var this_pos = $(this).offset().top;
+             if ( effect_pos > this_pos ) {
+                 $(this).css({
+                     opacity: 1,
+                     transform: 'translateY(0)'
+                 });
+             }
+         });
+     });
+ });
+  </script>
+
+
+
+  </head>
+  <body>
+
+
+
+
+     <div class="wrapper">
+       <img src="images/maturi.png" class="title-left">
+       <p class="copy-info">開催日：<span class="text-combine">8</span>月<span class="text-combine">●</span>日<br>
+          時刻：日暮れ（19：30予定）より<span class="text-combine">1</span>時間程度<br>
+          場所：古小烏公園</p>
+       <img src="images/hanabi_illust.png" class="hanabi scroll-fade2">
+       <h2 class="copy-main">社会と人々の距離が変わり、ザワザワと春が過ぎ、そして夏も去ろうとしています。<br>
+        厳しい状況の中、子供達は、じっと我慢してくれています。<br>
+        そんな子供達に、大人たちからささやかな夏をプレゼントしましょう。<br>
+        ほんのひと時ですが、子供は花火を、大人は花火の光に照らされる笑顔を楽しみましょう。</h2>
+       <img src="images/minami.png" class="title-right">
+    </div>
+      <div class="kazari-copy-container">
+         <img src="images/kazaricopy.png" class="kazari-copy">
+      </div>
+    </div>
+
+    <div class="wrapper-2">
+       <div class="main-container">
+            <div class="progrums-container">
+                  <div class="progrums">
+                    <img src="images/hana.png">
+                    <h3>夏といえばやっぱり花火。<br>
+                       どんな子供も花火の不思議な魔力には叶いません。<br>
+                       日が暮れた頃、みんなで見つめる花火は<br>
+                       何気ない時間を華やかに照らし、<br>
+                       楽しい時間を彩ってくれます。</h3>
+                 </div>
+                 <div class="progrums">
+                    <img src="images/yukata.png">
+                    <h3>夏の夜をいつまでも覚えているのは、<br>
+                       浴衣のせいかもしれません。<br>
+                       お母さんに、結んでもらった帯の感触、<br>
+                       お父さんに引っ張られた手の感触、<br>
+                      浴衣を着て歩く夜道には、特別な記憶がつまっています。</h3>
+                 </div>
+                 <div class="progrums">
+                    <img src="images/ryo.png">
+                    <h3>子どもたちが、花火に夢中になれば、<br>
+                        大人の時間も始まります。<br>
+                        夏の空にプシュっと大好きな音が響けば、<br>
+                        あっというまにおしゃべりタイム。<br>
+                        子どもたちもジュースで乾杯！。</h3>
+                 </div>
+            </div><!-- progrums -->
+
+             <div class="image-area  scroll-fade" >
+                <img src="images/ph1.png">
+                <img src="images/ph2.png">
+                <img src="images/ph3.png">
+             </div><!-- image-area -->
+       </div><!-- main-container -->
+    </div><!-- wrapper-2 -->
+
+    <div class="wrapper-2">
+       <div class="park-container">
+          <h4>FURUKOGARASU PARK </h4>
+          <ul class="slider">
+          <li><img src="images/park_image_1.png"></li>
+          <li><img src="images/park_image_2.png"></li>
+          <li><img src="images/park_image_3.png"></li>
+          <li><img src="images/park_image_4.png"></li>
+          <li><img src="images/park_image_5.png"></li>
+          </ul>
+       <div class="tyuuiten">
+          <h5>注意点 </h5>
+          <p class="tyuui" style="text-align:left;">※打ち上げ花火は禁止されていますので、手持ち花火限定です。　※住宅街の公園なので、大声は控えましょう<br>
+             ※屋外ですが、各ご家庭の安全を考え、お話しするときは少しだけ距離を意識しましょう。<br>
+             ※火に注意し、バケツ等で火の始末は徹底しましょう。 ※浴衣の着用はお任せします</p>
+       </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="iinkai">南薬院夏祭り実行委員会</p>
+      <p class="to-top"><a fref="#">topページへ</a></p>
+    </footer>
+
+
+
+
+  </body>
+</html>
