@@ -1,0 +1,192 @@
+
+.wrapper{
+    width:1000px;
+    margin:0 auto;
+    margin-top: 70px;
+    display: flex;
+}
+
+.wrapper-2{
+    width:850px;
+    margin:0 auto;
+    margin-top: 70px;
+    display: flex;
+}
+
+.text-combine {
+  -webkit-text-combine: horizontal;
+  -ms-text-combine-horizontal: all;
+  text-combine-upright: all;
+}
+
+.hanabi{
+  height: 1120px;
+  text-align: center;
+  margin-top:-100px;
+}
+
+
+.title-left,.title-right{
+  height:780px;
+  padding:0 40px;
+}
+
+.copy-info{
+  font-size: 27px;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  line-height: 45px;
+  width:130px;
+  margin-right: -140px;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+.copy-main{
+  font-size: 15.5px;
+  line-height: 32px;
+  width:115px;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin-left: -120px;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+
+.kazari-copy-container{
+    width:800px;
+    margin:0 auto;
+        margin-top: -150px;
+}
+
+
+
+.kazari-copy{
+align: center;
+margin-left: 400px;
+  width:330px;
+}
+
+
+
+
+
+
+.progrums img{
+  height:181px;
+  padding-bottom: 40px;
+  padding-right: 100px;
+}
+
+
+.progrums h3{
+  font-size: 15.5px;
+  line-height: 32px;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+.main-container{
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.progrums {
+  width:170px;
+  margin-bottom: 67px;
+}
+
+.image-area img{
+  width:540px;
+  margin-left:180px;
+}
+
+
+.tyuuiten{
+  margin-top: 170px;
+  align-items: center;
+  margin:0 auto;
+  text-align: center;
+}
+
+.park-container p{
+  font-size: 13px;
+  line-height: 26px;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+.park-container h4{
+  text-align:center;
+  border-bottom:solid 1px #black;
+  margin:0 auto;
+  font-size: 27px;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+.slider{
+  width:850px;
+  padding-bottom:15px;
+  margin-bottom:55px;
+}
+
+.tyuuiten{
+  margin-top:85px;
+}
+
+.tyuuiten h5{
+  margin-top:85px;
+  padding-bottom: 20px;
+  font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+}
+
+.tyuuiten p{
+ display: inline-block;
+ margin-left:25px;
+ margin-bottom: 70px;
+}
+
+
+/*左右の矢印の色を変える*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+/*左右の矢印の位置を変える*/
+.slick-next {
+    right: 20px;
+    z-index: 99;
+}
+.slick-prev {
+     left: 15px;
+    z-index: 100;
+}
+/*スライド数のドットの色を変える*/
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}
+/*スライド画像の横幅可変*/
+img {
+    max-width: 100%;
+     height: auto;
+}
+
+
+footer{
+  height:45px;
+  background: #00c3ff; /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #00c3ff, #ffff1c); /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #00c3ff, #ffff1c);
+  display:flex;
+  padding:10px 17px;
+  font-size:13px;
+  margin-top: 150px;
+  justify-content: space-between;
+}
+
+footer p{
+  margin-top: 17px;
+}
